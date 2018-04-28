@@ -1,0 +1,15 @@
+PODS:
+  - Reachability (3.2)
+  - SwiftSocket (2.0.2)
+
+DEPENDENCIES:
+  - Reachability
+  - SwiftSocket
+
+SPEC CHECKSUMS:
+  Reachability: 33e18b67625424e47b6cde6d202dce689ad7af96
+  SwiftSocket: 6f4c9c63fbc5c1d61188936bb3c599fd546f40ae
+
+PODFILE CHECKSUM: 88f12b0f92943ede3354582fce3e155e6ca82d2a
+
+COCOAPODS: 1.4.0

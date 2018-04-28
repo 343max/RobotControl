@@ -1,0 +1,6 @@
+framework module Pods_RobotControll {
+  umbrella header "Pods-RobotControll-umbrella.h"
+
+  export *
+  module * { export * }
+}
