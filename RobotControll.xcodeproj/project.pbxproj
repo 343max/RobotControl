@@ -12,6 +12,7 @@
 		BBB7B00E208B03220003A26C /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = BBB7B00C208B03220003A26C /* MainMenu.xib */; };
 		BBB7B017208B033A0003A26C /* RobotControll.swift in Sources */ = {isa = PBXBuildFile; fileRef = BBB7B016208B033A0003A26C /* RobotControll.swift */; };
 		BBB7B019208B069E0003A26C /* ControllWindow.swift in Sources */ = {isa = PBXBuildFile; fileRef = BBB7B018208B069E0003A26C /* ControllWindow.swift */; };
+		BBE42A452094349900735FC8 /* ImageStreamer.swift in Sources */ = {isa = PBXBuildFile; fileRef = BBE42A442094349900735FC8 /* ImageStreamer.swift */; };
 		F90C3E6D2644778644C3FA8C /* Pods_RobotControll.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 521EAB0B601A14098218CECA /* Pods_RobotControll.framework */; };
 /* End PBXBuildFile section */
 
@@ -27,6 +28,7 @@
 		BBB7B010208B03220003A26C /* RobotControll.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = RobotControll.entitlements; sourceTree = "<group>"; };
 		BBB7B016208B033A0003A26C /* RobotControll.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RobotControll.swift; sourceTree = "<group>"; };
 		BBB7B018208B069E0003A26C /* ControllWindow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ControllWindow.swift; sourceTree = "<group>"; };
+		BBE42A442094349900735FC8 /* ImageStreamer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageStreamer.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -77,6 +79,7 @@
 				BBB7B010208B03220003A26C /* RobotControll.entitlements */,
 				BBB7B016208B033A0003A26C /* RobotControll.swift */,
 				BBB7B018208B069E0003A26C /* ControllWindow.swift */,
+				BBE42A442094349900735FC8 /* ImageStreamer.swift */,
 			);
 			path = RobotControll;
 			sourceTree = "<group>";
@@ -219,6 +222,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BBE42A452094349900735FC8 /* ImageStreamer.swift in Sources */,
 				BBB7B019208B069E0003A26C /* ControllWindow.swift in Sources */,
 				BBB7B009208B03200003A26C /* AppDelegate.swift in Sources */,
 				BBB7B017208B033A0003A26C /* RobotControll.swift in Sources */,
@@ -361,7 +365,10 @@
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
 				INFOPLIST_FILE = RobotControll/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = de.343max.RobotControll;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
@@ -377,7 +384,10 @@
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
 				INFOPLIST_FILE = RobotControll/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = de.343max.RobotControll;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;

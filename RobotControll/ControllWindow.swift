@@ -6,6 +6,7 @@ class ControllWindow: NSWindow, NSWindowDelegate {
     let controll: RobotControll
     @IBOutlet weak var statusField: NSTextField!
     var timer: Timer!
+    let streamer: ImageStreamer
 
     var connected = false {
         didSet {
@@ -26,6 +27,8 @@ class ControllWindow: NSWindow, NSWindowDelegate {
 
     override init(contentRect: NSRect, styleMask style: NSWindow.StyleMask, backing backingStoreType: NSWindow.BackingStoreType, defer flag: Bool) {
         controll = RobotControll(address: "192.168.0.44")
+        streamer = ImageStreamer(url: URL(string: "http://localhost:3000/image.jpg")!)
+        streamer.connect()
         super.init(contentRect: contentRect, styleMask: style, backing: backingStoreType, defer: flag)
         self.delegate = self
     }
